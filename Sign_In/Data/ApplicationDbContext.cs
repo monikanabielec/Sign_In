@@ -17,24 +17,28 @@ namespace Sign_In.Data
         public DbSet <Student> Students { get; set; }
         public DbSet <Subject> Subjects { get; set; }
 
-        protected override void OnModelCreating(ModelBuilder builder)
-        {
-            builder.Entity<Subject>().HasData(
-                new Subject
-                {
+       
+
+        //protected override void OnModelCreating(ModelBuilder builder)
+        //{
+        //    builder.Entity<Subject>().HasData(
+        //        new Subject
+        //        {
                  
-                    SubjectId = 1,
-                    SubjectName = "C#",
-                    TeacherName = "Nowak Jan",
-                },
-                new Subject
-                {
+        //            SubjectId = 1,
+        //            SubjectName = "C#",
+        //            TeacherName = "Nowak Jan",
+        //        },
+        //        new Subject
+        //        {
                   
-                    SubjectId = 2,
-                    SubjectName = "Java",
-                    TeacherName = "Kowalski Marek",
-                }
-                );
-        }
+        //            SubjectId = 2,
+        //            SubjectName = "Java",
+        //            TeacherName = "Kowalski Marek",
+        //        }
+        //        );
+        //}
     }
+
+   
 }
